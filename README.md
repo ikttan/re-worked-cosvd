@@ -1,5 +1,18 @@
 # Recommendation System by Matrix Co-factorization with Tag Genome and Time Information
 
+## Dataset
+The dataset used in this work is [MovieLens dataset](https://grouplens.org/datasets/movielens/). There are three sets of datasets obtained from [GroupLens](https://grouplens.org).
+
+
+`ml-latest-small` MovieLens 100K dataset (Year 2016)
+
+`mlsmall`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MovieLens 100K latest dataset (Year 2018)
+
+`ml-latest`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+MovieLens 27M latest dataset (Year 2018)
 
 ## Installation
 
