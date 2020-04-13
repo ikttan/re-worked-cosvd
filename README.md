@@ -1,4 +1,5 @@
-# Recommendation System by Matrix Co-factorization with Tag Genome and Time Information
+# Improved recommender system using matrix co-factorization with pruned tags
+To improve recommender system by matrix co-factorization with tag genome and time information.
 
 ## Dataset
 The dataset used in this work is [MovieLens dataset](https://grouplens.org/datasets/movielens/). There are three sets of datasets obtained from [GroupLens](https://grouplens.org).
@@ -14,6 +15,11 @@ MovieLens 100K latest dataset (Year 2018) (Uploaded to this repository)
 `ml-latest`
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [MovieLens 27M latest dataset (Year 2018)](https://grouplens.org/datasets/movielens/latest/)
+
+
+`ml-latest-2016`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[MovieLens 24M latest dataset (Year 2016)](https://bit.ly/2ULNV5i)
 
 ## Installation
 
@@ -32,20 +38,20 @@ To generate the User-Tag Matrix & Item-Tag Matrix as the work proposed by [Luo e
 # 'f_it' is Item-Tag Matrix
 # 'tags' is the tags data with tag internal id
 # 'ratings' is a joined table of rating data and tag data
-
-p_ut, f_it, tags, ratings = generateTagsOrigin(rate, raw_tags)
+import matrices_generation as mg
+p_ut, f_it, tags, ratings = mg.generateTagsOrigin(rate, raw_tags)
 ```
 
-To utilize the Tag Genome in User-Tag Matrix & Item-Tag Matrix generation
+Tag Genome Approach - To utilize the Tag Genome in User-Tag Matrix & Item-Tag Matrix generation
 ```python
 # 'genome_tag' is the tag data with tag id that used for linking the 'genome_score'
 # 'genome_score' is the tag data with genome score
-p_ut, f_it, tags, ratings = generateTagsWithGenomeScore(rate, raw_tags, genome_tag, genome_score)
+p_ut, f_it, tags, ratings = mg.generateTagsWithGenomeScore(rate, raw_tags, genome_tag, genome_score)
 ```
 
 To initial the co-SVD
 ```python
-algo = co_SVD(n_epochs=40, lr_all=0.0073, n_factors=40
+algo = co_SVD(n_epochs=20, lr_all=0.006, n_factors=40
               , p_ut=p_ut, f_it=f_it, tags=tags, ratings=ratings)
 ```
 
