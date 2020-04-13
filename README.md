@@ -18,7 +18,7 @@ MovieLens 100K latest dataset (Year 2018) (Uploaded to this repository)
 
 
 `ml-latest-2016`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;
 [MovieLens 24M latest dataset (Year 2016)](https://bit.ly/2ULNV5i)
 
 ## Installation
