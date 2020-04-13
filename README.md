@@ -1,4 +1,4 @@
-# Recommendation System by Matrix Co-factorization with Tag Genome and Time Information
+# Re-worked co-SVD
 
 ## Dataset
 The dataset used in this work is [MovieLens dataset](https://grouplens.org/datasets/movielens/). There are three sets of datasets obtained from [GroupLens](https://grouplens.org).
