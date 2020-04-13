@@ -21,6 +21,8 @@ MovieLens 100K latest dataset (Year 2018) (Uploaded to this repository)
 &nbsp;
 [MovieLens 24M latest dataset (Year 2016)](https://bit.ly/2ULNV5i)
 
+Note: the file name of the dataset need to be renamed accordingly.
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [Surprise package](http://surpriselib.com/).
