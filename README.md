@@ -1,16 +1,15 @@
 # Re-worked co-SVD
 
 ## Dataset
-The dataset used in this work is [MovieLens dataset](https://grouplens.org/datasets/movielens/). There are three sets of datasets obtained from [GroupLens](https://grouplens.org).
-
+The datasets used in this work is from the [MovieLens dataset](https://grouplens.org/datasets/movielens/). The two datasets used can be obtained from [GroupLens](https://grouplens.org).
 
 `ml-latest-small` MovieLens 100K dataset (Year 2016) (Uploaded to this repository)
 
-`mlsmall`
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+`mlsmall` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 MovieLens 100K latest dataset (Year 2018) (Uploaded to this repository)
 
 ## Installation
+
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [Surprise package](http://surpriselib.com/).
 
